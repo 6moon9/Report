@@ -3,14 +3,17 @@
 class Report
 {
     public:
-        Report(Stream *stream, bool iDebug = false);
+        Report(Stream *stream, bool iDebug = false, int iStep = 5);
+        void print();
         void prettyPrint();
         Stream *serial;
         bool debug = false;
+        int step = 5;
+        int cmp = 0;
         int num = 0;
-        int ok;
-        int ntr;
-        int inv;
-        int ko;
-        int tot;
+        double ok;
+        double ntr;
+        double inv;
+        double ko;
+        double tot;
 };
