@@ -16,4 +16,5 @@ class Report
         double inv;
         double ko;
         double tot;
+        int prob;
 };
